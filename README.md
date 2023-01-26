@@ -1,6 +1,6 @@
 # Kubernetes
 Understanding Kubernetes
-Documentation Refrence: https://kubernetes.io/docs/home/
+Documentation Reference: https://kubernetes.io/docs/home/
 
 kubectl commands
 kubectl get nodes
@@ -9,28 +9,21 @@ kubectl get services
 kubectl create deployment nginx-depl --image=nginx
 kubectl get deployment
 kubectl get replicaset
-kubectl edit deployment nginx-depl
 
 debugging
 kubectl logs {pod-name}
 kubectl exec -it {pod-name} -- bin/bash
-
-create mongo deployment
-kubectl create deployment mongo-depl --image=mongo
-kubectl logs mongo-depl-{pod-name}
-kubectl describe pod mongo-depl-{pod-name}
+kubectl describe pod {pod-name}
 
 delete deplyoment
-kubectl delete deployment mongo-depl
-kubectl delete deployment nginx-depl
+kubectl delete deployment {pod name}
+kubectl delete activity {podname}
 
 create or edit config file
-vim nginx-deployment.yaml
-kubectl apply -f nginx-deployment.yaml
+nano nginx-pod.yaml
+kubectl apply -f nginx-pod.yaml
 kubectl get pod
 kubectl get deployment
 
 delete with config
-kubectl delete -f nginx-deployment.yaml
-#Metrics
-kubectl top The kubectl top command returns current CPU and memory usage for a cluster’s pods or nodes, or for a particular pod or node if specified.
+kubectl delete -f nginx-pod.yaml
