@@ -1,6 +1,8 @@
 # Kubernetes
 ## Understanding Kubernetes
 Documentation Reference: https://kubernetes.io/docs/home/
+
+   https://kubernetes.github.io/ingress-nginx/deploy/#docker-for-mac
       
 ###### kubectl commands
       kubectl get nodes
